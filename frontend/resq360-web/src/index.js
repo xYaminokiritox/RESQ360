@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ThemeContextProvider from './ThemeContext';
+import { AuthProvider } from './AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeContextProvider>
-      <App />
-    </ThemeContextProvider>
+    <AuthProvider>
+      <ThemeContextProvider>
+        <App />
+      </ThemeContextProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
 
