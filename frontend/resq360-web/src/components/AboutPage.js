@@ -1,11 +1,12 @@
 import React from 'react';
+import { Container, Typography } from '@mui/material';
 
 function AboutPage() {
   return (
-    <div>
-      <h1>About Us</h1>
-      <p>This is the about page of the ResQ360 web application.</p>
-    </div>
+    <Container>
+      <Typography variant="h3" gutterBottom>About Us</Typography>
+      <Typography variant="body1">This is the about page of the ResQ360 web application.</Typography>
+    </Container>
   );
 }
 
